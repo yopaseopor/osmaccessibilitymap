@@ -903,7 +903,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Exact Incline Moderate Up',
-			query: '(nwr["highway"!="steps"]["incline"~"[0-9]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="steps"]["incline"~"^[0-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
