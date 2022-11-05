@@ -899,7 +899,67 @@ style: function (feature) {
 				});
 				return style;
 			}
-				},
+},
+ {
+
+   group: 'Incline',
+   title: 'Exact incline',
+   query: '(nwr["highway"!="steps"]["incline"]({{bbox}});node(w););out meta;',
+   iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+   iconStyle: 'background-color:rgba(255,255,255,0.4)',
+   style: function (feature) {
+    var key_regex = /^traffic_sign/
+    var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+    var name = feature.get(name_key) || '';
+    var styles = {
+     'incline': {
+      '[0-9]': new ol.style.Style({
+       image: new ol.style.Icon({
+       src: imgSrc + 'icones/maxspeed_empty.svg',
+       rotation: 0,
+       scale: 0.30
+      })
+      })
+     },
+     'incline': {
+      '-[0-9]': new ol.style.Style({
+       image: new ol.style.Icon({
+       src: imgSrc + 'icones/maxspeed_empt.svg',
+       rotation:9.4,
+       scale: 0.30
+      })
+      })
+     },
+     'traffic_sign': {
+      'ES:trunk': new ol.style.Style({
+       zIndex: 100,
+       stroke: new ol.style.Stroke({
+        color: 'rgba(246, 99, 79, 1.0)',
+        width: 1
+       }),
+       fill: new ol.style.Fill({
+        color: 'rgba(246, 99, 79, 0.3)'
+       }),
+       text: new ol.style.Text({
+        text: name
+       })
+      })
+     }
+    };
+    for (var key in styles) {
+     var value = feature.get(key);
+     if (value !== undefined) {
+      for (var regexp in styles[key]) {
+       if (new RegExp(regexp).test(value)) {
+        return styles[key][regexp];
+       }
+      }
+     }
+    }
+    return null;
+   } 
+   
+  },
 		{
 			group: 'Vorades',
 			title: 'Falta informació >> <a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
