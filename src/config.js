@@ -904,7 +904,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Exact Incline Moderate Up',
 			query: '(nwr["highway"!="steps"]["incline"~"^[0-9]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconSrc: imgSrc + 'icones/accessibilitat/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -940,7 +940,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Exact Incline Moderate Down',
 			query: '(nwr["highway"!="steps"]["incline"~"^-[0-9]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconSrc: imgSrc + 'icones/accessibilitat/incline_down_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -955,7 +955,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
+							src: imgSrc + 'icones/accessibilitat/incline_down_5.svg',
 							scale:0.03
 						}),
 							text: new ol.style.Text({
