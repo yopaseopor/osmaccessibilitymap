@@ -740,7 +740,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: imgSrc + 'accessibilitat/steps_up.svg',
-							scale:0.03
+							scale:0.003
 						}),
 							text: new ol.style.Text({
 								text: "/",
@@ -776,7 +776,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: imgSrc + 'accessibilitat/steps_down.svg',
-							scale:0.03
+							scale:0.003
 						}),
 							text: new ol.style.Text({
 								text: "\\",
