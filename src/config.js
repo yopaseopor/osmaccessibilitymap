@@ -1047,7 +1047,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Up 20+%',
-			query: '(nwr["highway"!="steps"]["incline"~"^[0-9][0-9]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="steps"]["incline"~"^[2-9][0-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1084,7 +1084,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Incline Down -0-4%',
 			query: '(nwr["highway"!="steps"]["incline"~"^-[0-4]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
+			iconSrc: imgSrc + 'accessibilitat/incline_down_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -1120,7 +1120,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Incline Down -5-9%',
 			query: '(nwr["highway"!="steps"]["incline"~"^-[5-9]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_5.svg',
+			iconSrc: imgSrc + 'accessibilitat/incline_down_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -1156,7 +1156,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Incline Down -10-14%',
 			query: '(nwr["highway"!="steps"]["incline"~"^-1[0-4]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_10.svg',
+			iconSrc: imgSrc + 'accessibilitat/incline_down_10.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -1192,7 +1192,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Incline Down -15-19%',
 			query: '(nwr["highway"!="steps"]["incline"~"^-1[5-9]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_15.svg',
+			iconSrc: imgSrc + 'accessibilitat/incline_down_15.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -1227,8 +1227,8 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Down -20+%',
-			query: '(nwr["highway"!="steps"]["incline"~"^-[0-9][0-9]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_20.svg',
+			query: '(nwr["highway"!="steps"]["incline"~"^-[2-9][0-9]%"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'accessibilitat/incline_down_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -1261,42 +1261,6 @@ style: function (feature) {
 			}
 				},
 
-		{
-			group: 'Incline',
-			title: 'Exact Incline Moderate Down',
-			query: '(nwr["highway"!="steps"]["incline"~"^-[0-5]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_down_5.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^incline$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'accessibilitat/incline_down_5.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-},
 		{
 			group: 'Vorades',
 			title: 'Falta informació >> <a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
