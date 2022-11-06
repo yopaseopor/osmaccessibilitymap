@@ -940,7 +940,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Incline Up 5-9%',
 			query: '(nwr["highway"!="steps"]["incline"~"^[5-9]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
+			iconSrc: imgSrc + 'accessibilitat/incline_up_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -976,7 +976,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Incline Up 10-14%',
 			query: '(nwr["highway"!="steps"]["incline"~"^1[0-4]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
+			iconSrc: imgSrc + 'accessibilitat/incline_up_10.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -1012,7 +1012,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Incline Up 15-19%',
 			query: '(nwr["highway"!="steps"]["incline"~"^1[5-9]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
+			iconSrc: imgSrc + 'accessibilitat/incline_up_15.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
@@ -1048,7 +1048,7 @@ style: function (feature) {
 			group: 'Incline',
 			title: 'Incline Up 20+%',
 			query: '(nwr["highway"!="steps"]["incline"~"^[0-9][0-9]%"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
+			iconSrc: imgSrc + 'accessibilitat/incline_up_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^incline$/
