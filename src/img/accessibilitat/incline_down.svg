@@ -27,8 +27,8 @@
      showgrid="false"
      inkscape:lockguides="false"
      inkscape:zoom="1.5273438"
-     inkscape:cx="212.13299"
-     inkscape:cy="256"
+     inkscape:cx="212.46035"
+     inkscape:cy="255.99999"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
@@ -40,7 +40,7 @@
      inkscape:label="Image"
      id="g15">
     <path
-       style="fill:#000000"
+       style="fill:#00ffff"
        d="M -0.7577909,269.74169 206.18888,370.36225 510.69054,510.26671 511.34527,510.47862 512,512 H 257 L -0.61892583,512.65473 C -1.5755974,431.96884 3.5872418,347.8591 -0.7577909,269.74169 Z"
        id="path275"
        sodipodi:nodetypes="cccccccc"

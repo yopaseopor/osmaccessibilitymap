@@ -7,7 +7,7 @@
    width="512"
    height="512"
    viewBox="0 0 512 512"
-   sodipodi:docname="incline_up.svg"
+   sodipodi:docname="incline_question.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -40,10 +40,28 @@
      inkscape:label="Image"
      id="g15">
     <path
-       style="fill:#00ffff;stroke-width:1"
+       style="fill:#280b0b;stroke-width:1"
        d="M 513.86108,338.48851 306.99763,411.44605 2.6184232,512.88741 1.9639706,513.04106 1.3095022,514.14417 H 256.20694 l 257.51532,0.47473 c 0.95629,-58.50339 -4.20447,-119.48934 0.13887,-176.13039 z"
        id="path275"
        sodipodi:nodetypes="cccccccc"
        inkscape:label="path275" />
+    <path
+       style="fill:#280b0b;stroke-width:0.999998"
+       d="m -0.37884843,335.54604 207.21089843,72.95754 304.89044,101.44136 0.65554,0.15365 0.65558,1.10311 H 257.70804 L -0.23979223,511.67643 C -1.1976907,453.17304 3.9717354,392.18709 -0.37890883,335.54604 Z"
+       id="path275-5"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:label="path275" />
+    <text
+       xml:space="preserve"
+       style="font-size:713.659px;line-height:418.159px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;letter-spacing:0px;word-spacing:0px;fill:#ff0000;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="125.86874"
+       y="517.34882"
+       id="text837"
+       transform="scale(1.0289016,0.97191026)"><tspan
+         sodipodi:role="line"
+         id="tspan835"
+         x="125.86874"
+         y="517.34882"
+         style="fill:#ff0000;stroke:none;stroke-width:0.999999px">?</tspan></text>
   </g>
 </svg>
