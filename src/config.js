@@ -1263,7 +1263,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Unknown',
-			query: '(nwr["highway"!="steps"]["incline"!]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="steps"][!"incline"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_question.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
