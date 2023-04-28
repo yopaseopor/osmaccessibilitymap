@@ -795,7 +795,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Up',
-			query: '(nwr["highway"!="steps"]["incline"="up"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"="up"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -831,7 +831,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Down',
-			query: '(nwr["highway"!="steps"]["incline"="down"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"="down"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -867,7 +867,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'No Incline',
-			query: '(nwr["highway"!="steps"]["incline"="no"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"="no"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_nul.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -903,7 +903,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Up 0-4%',
-			query: '(nwr["highway"!="steps"]["incline"~"^[0-4]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^[0-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -939,7 +939,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Up 5-9%',
-			query: '(nwr["highway"!="steps"]["incline"~"^[5-9]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -975,7 +975,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Up 10-14%',
-			query: '(nwr["highway"!="steps"]["incline"~"^1[0-4]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^1[0-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_10.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1011,7 +1011,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Up 15-19%',
-			query: '(nwr["highway"!="steps"]["incline"~"^1[5-9]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^1[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_15.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1047,7 +1047,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Up 20+%',
-			query: '(nwr["highway"!="steps"]["incline"~"^[2-9][0-9]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^[2-9][0-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1083,7 +1083,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Down -0-4%',
-			query: '(nwr["highway"!="steps"]["incline"~"^-[0-4]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^-[0-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1119,7 +1119,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Down -5-9%',
-			query: '(nwr["highway"!="steps"]["incline"~"^-[5-9]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^-[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1155,7 +1155,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Down -10-14%',
-			query: '(nwr["highway"!="steps"]["incline"~"^-1[0-4]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^-1[0-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_10.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1191,7 +1191,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Down -15-19%',
-			query: '(nwr["highway"!="steps"]["incline"~"^-1[5-9]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^-1[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_15.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1227,7 +1227,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Down -20+%',
-			query: '(nwr["highway"!="steps"]["incline"~"^-[2-9][0-9]%"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"~"^-[2-9][0-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1263,7 +1263,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'Incline Unknown',
-			query: '((way[highway=motorway][!"incline"]({{bbox}});node(w);way[highway=trunk][!"incline"]({{bbox}});node(w);way[highway=primary][!"incline"]({{bbox}});node(w);way[highway=secondary][!"incline"]({{bbox}});node(w);way[highway=tertiary][!"incline"]({{bbox}});node(w);way[highway=unclassified][!"incline"]({{bbox}});node(w);way[highway=track][!"incline"]({{bbox}});node(w);way[highway=path][!"incline"]({{bbox}});node(w);way[highway=living_street][!"incline"]({{bbox}});node(w);way[highway=pedestrian][!"incline"]({{bbox}});node(w);way[highway=residential][!"incline"]({{bbox}});node(w);way[highway=service][!"incline"]({{bbox}});node(w););out meta;',
+			query: '(way["highway"!="elevator"][!"incline"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_question.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
