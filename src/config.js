@@ -867,7 +867,7 @@ style: function (feature) {
 		{
 			group: 'Incline',
 			title: 'No Incline',
-			query: '(nwr["highway"!="elevator"]["incline"="no"]({{bbox}});node(w););out meta;',
+			query: '(nwr["highway"!="elevator"]["incline"="no"]({{bbox}});node(w);nwr["highway"!="elevator"]["incline"~"^0"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_nul.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -902,8 +902,8 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Up 0-4%',
-			query: '(nwr["highway"!="elevator"]["incline"~"^[0-4]%"]({{bbox}});node(w););out meta;',
+			title: 'Incline Up 1-4%',
+			query: '(nwr["highway"!="elevator"]["incline"~"^[1-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -1082,8 +1082,8 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Down -0-4%',
-			query: '(nwr["highway"!="elevator"]["incline"~"^-[0-4]%"]({{bbox}});node(w););out meta;',
+			title: 'Incline Down -1-4%',
+			query: '(nwr["highway"!="elevator"]["incline"~"^-[1-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
