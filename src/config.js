@@ -1328,7 +1328,7 @@ style: function (feature) {
 		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete kerbs', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Fkerbs.json&language=ca#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'accessibilitat/kerb_yes.svg', height: 20, width: 20})));
 		
 //Mapcomplete wheelchair
-		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete kerbs', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Fwheelchair.json&language=ca#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'accessibilitat/wheelchair_unknown.svg', height: 20, width: 20})));
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete wheelchair', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Fwheelchair.json&language=ca#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'accessibilitat/wheelchair_unknown.svg', height: 20, width: 20})));
 		
 		var edit = $('<div>').html(config.i18n.editWith);
 		//ID editor
@@ -1427,7 +1427,7 @@ style: function (feature) {
 		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Library Map', href: 'https://yopaseopor.github.io/osmlibrarymap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'osmlibrarymap_logo.svg', height: 20, width: 20})));
 		
 				//OSM MTB Map
-		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM MTB Map', href: 'https://yopaseopor.github.io/osmmtbmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'osmmmtbmap_logo.svg', height: 20, width: 20})));
+		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM MTB Map', href: 'https://yopaseopor.github.io/osmmtbmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'osmmtbmap_logo.svg', height: 20, width: 20})));
 		
 				//OSM Parking Map
 		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Parking Map', href: 'https://osm-es.github.io/osmparkingmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'osmparkingmap_logo.svg', height: 20, width: 20})));
