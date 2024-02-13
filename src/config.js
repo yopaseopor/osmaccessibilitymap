@@ -722,7 +722,7 @@ var config = {
 				},
 		{
 			group: 'Incline',
-			title: 'Escales/ras/Steps /| ↑↑',
+			title: 'Escales/ras/Steps ↑↑',
 			query: '(nwr["highway"="steps"]["incline"="up"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/steps_up.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -758,7 +758,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Escales/ras/Steps |\\↓↓',
+			title: 'Escales/ras/Steps ↓↓',
 			query: '(nwr["highway"="steps"]["incline"="down"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/steps_down.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -794,7 +794,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: '/| ↑↑',
+			title: '↑↑',
 			query: '(nwr["highway"!="elevator"]["incline"="up"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -830,7 +830,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: '|\\↓↓',
+			title: '↓↓',
 			query: '(nwr["highway"!="elevator"]["incline"="down"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -902,7 +902,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline /| +1-4%',
+			title: 'Incline ↑ +1-4%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^[1-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -938,7 +938,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline /| +5-9%',
+			title: 'Incline ↑ +5-9%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -974,7 +974,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline /| +10-14%',
+			title: 'Incline ↑ +10-14%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^1[0-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_10.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1010,7 +1010,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline /| +15-19%',
+			title: 'Incline ↑ +15-19%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^1[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_15.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1046,7 +1046,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline /| +20+%',
+			title: 'Incline ↑ +20+%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^[2-9][0-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1082,7 +1082,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline |\ -1-4%',
+			title: 'Incline ↓ -1-4%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-[1-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1118,7 +1118,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline |\ -5-9%',
+			title: 'Incline ↓ -5-9%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1154,7 +1154,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline |\ -10-14%',
+			title: 'Incline ↓ -10-14%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-1[0-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_10.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1190,7 +1190,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline |\ -15-19%',
+			title: 'Incline ↓ -15-19%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-1[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_15.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1226,7 +1226,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline |\ -20+%',
+			title: 'Incline ↓ -20+%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-[2-9][0-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
