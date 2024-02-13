@@ -225,7 +225,7 @@ var config = {
 		},
 		{
 			group: 'Wheelchair',
-			title: 'Falta Wheelchair',
+			title: 'Falta/Missing Wheelchair',
 			query: '(node[!wheelchair][shop]({{bbox}});node[!wheelchair][amenity]({{bbox}});node[!wheelchair][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
 			iconStyle: 'background-color:#714601',
@@ -240,8 +240,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Voreres',
-			title: 'Vorera adaptada',
+			group: 'Voreres/Aceras/Sidewalks',
+			title: 'Adaptada/Adapted',
 			query: '(way[wheelchair=yes][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#40E0D0',
@@ -261,8 +261,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Voreres',
-			title: 'Vorera amb limitacions',
+			group: 'Voreres/Aceras/Sidewalks',
+			title: 'Limitada/Limited',
 			query: '(way[wheelchair=limited][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FFA500',
@@ -282,8 +282,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Voreres',
-			title: 'Vorera no adaptada',
+			group: 'Voreres/Aceras/Sidewalks',
+			title: 'NO adaptada/adapted',
 			query: '(way[wheelchair=no][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',
@@ -303,8 +303,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Voreres',
-			title: 'Vorera sense informació',
+			group: 'Voreres/Aceras/Sidewalks',
+			title: 'No info',
 			query: '(way[!wheelchair][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#000000',
@@ -324,8 +324,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments',
-			title: 'Encreuament adaptat',
+			group: 'Passos/Pasos/Crossings',
+			title: 'Adaptat/do/Adapted',
 			query: '(way[wheelchair=yes][highway=footway][footway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#40E0D0',
@@ -345,8 +345,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments',
-			title: 'Encreuament limitat',
+			group: 'Passos/Pasos/Crossings',
+			title: 'Limitat/do/Limited',
 			query: '(way[wheelchair=limited][highway=footway][footway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FFA500',
@@ -366,8 +366,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments',
-			title: 'Encreuament no adaptat',
+			group: 'Passos/Pasos/Crossings',
+			title: 'NO Adaptat/do/Adapted',
 			query: '(way[wheelchair=no][highway=footway][footway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',
@@ -387,7 +387,7 @@ var config = {
 			}
 		},
 				{
-			group: 'Encreuaments',
+			group: 'Passos/Pasos/Crossings',
 			title: 'Wheelchair=yes',
 			query: '(node[wheelchair=yes][highway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
@@ -403,7 +403,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments',
+			group: 'Passos/Pasos/Crossings',
 			title: 'Wheelchair=limited',
 			query: '(node[wheelchair=limited][highway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg',
@@ -419,7 +419,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments',
+			group: 'Passos/Pasos/Crossings',
 			title: 'Wheelchair=no',
 			query: '(node[wheelchair=no][highway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_no_shop.svg',
@@ -435,8 +435,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments',
-			title: 'Falta Wheelchair',
+			group: 'Passos/Pasos/Crossings',
+			title: 'Falta/Missing Wheelchair',
 			query: '(node[!wheelchair][highway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
 			iconStyle: 'background-color:#714601',
@@ -451,8 +451,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Vies',
-			title: 'Via adaptada',
+			group: 'Via/Way',
+			title: 'Adaptada/Adapted',
 			query: '(way[wheelchair=yes][highway]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#40E0D0',
@@ -472,8 +472,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Vies',
-			title: 'Via amb limitacions',
+			group: 'Via/Way',
+			title: 'Limitada/Limited',
 			query: '(way[wheelchair=limited][highway]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FFA500',
@@ -493,8 +493,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Vies',
-			title: 'Via no adaptada',
+			group: 'Via/Way',
+			title: 'NO adaptada/adapted',
 			query: '(way[wheelchair=no][highway]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',
@@ -514,8 +514,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Vies',
-			title: 'Via sense informació',
+			group: 'Via/Way',
+			title: 'No info',
 			query: '(way[!wheelchair][highway]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#000000',
@@ -536,8 +536,8 @@ var config = {
 		},
 
 		{
-			group: 'Àrees',
-			title: 'Àrea adaptada',
+			group: 'Àrea',
+			title: 'Adaptada/Adapted',
 			query: '(way[wheelchair=yes][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/dots.png',
 			iconStyle: 'background-color:#40E0D0',
@@ -557,8 +557,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Àrees',
-			title: 'Àrea amb limitacions',
+			group: 'Àrea',
+			title: 'Limitada/Limited',
 			query: '(way[wheelchair=limited][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/dots.png',
 			iconStyle: 'background-color:#FFA500',
@@ -578,8 +578,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Àrees',
-			title: 'Àrea no adaptada',
+			group: 'Àrea',
+			title: 'NO adaptada/adapted',
 			query: '(way[wheelchair=no][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/dots.png',
 			iconStyle: 'background-color:#FF0000',
@@ -599,8 +599,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Àrees',
-			title: 'Àrea sense informació',
+			group: 'Àrea',
+			title: 'No info',
 			query: '(way[!wheelchair][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/dots.png',
 			iconStyle: 'background-color:#000000',
@@ -620,8 +620,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Altres',
-			title: 'Plaça aparcament',
+			group: 'Altres/Otros/Others',
+			title: 'Plaça/Plaza parking space',
 			query: '(node["capacity:disabled"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/capacity_disabled.svg',
 			iconStyle: 'background-color:#714601',
@@ -636,8 +636,8 @@ var config = {
 			}
 		},
 				{
-			group: 'Altres',
-			title: 'Escales',
+			group: 'Altres/Otros/Others',
+			title: 'Escales/ras/Steps',
 			query: '(way[highway=steps]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/dots.png',
 			iconStyle: 'background-color:#FF0000',
@@ -657,8 +657,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Altres',
-			title: 'Obstacles',
+			group: 'Altres/Otros/Others',
+			title: 'Obstacles/Obstáculos',
 			query: '(node["obstacle:wheelchair"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/obstacle_wheelchair_yes.svg',
 			iconStyle: 'background-color:#714601',
@@ -673,8 +673,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Vorades',
-			title: 'Elevades >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
+			group: 'Vorades/Bordillos/Kerbs',
+			title: 'Elevades/Raised >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome"</a><b>Completar/Complete</b>',
 			query: '(node[kerb=raised]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_raised.svg',
 			iconStyle: 'background-color:#714601',
@@ -689,8 +689,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Vorades',
-			title: 'Rebaixades >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
+			group: 'Vorades/Bordillos/Kerbs',
+			title: 'Rebaixades/Lowered >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome"</a><b>Completar/Complete</b>',
 			query: '(node[kerb=lowered]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_lowered.svg',
 			iconStyle: 'background-color:#714601',
@@ -705,8 +705,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Vorades',
-			title: 'Anivellades >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
+			group: 'Vorades/Bordillos/Kerbs',
+			title: 'A nivell/Flush >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome"</a><b>Completar/Complete</b>',
 			query: '(node[kerb=flush]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_flush.svg',
 			iconStyle: 'background-color:#714601',
@@ -722,7 +722,7 @@ var config = {
 				},
 		{
 			group: 'Incline',
-			title: 'Steps up',
+			title: 'Escales/ras/Steps /| ↑↑',
 			query: '(nwr["highway"="steps"]["incline"="up"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/steps_up.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -758,7 +758,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Steps down',
+			title: 'Escales/ras/Steps |\\↓↓',
 			query: '(nwr["highway"="steps"]["incline"="down"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/steps_down.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -794,7 +794,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Up',
+			title: '/| ↑↑',
 			query: '(nwr["highway"!="elevator"]["incline"="up"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -830,7 +830,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Down',
+			title: '|\\↓↓',
 			query: '(nwr["highway"!="elevator"]["incline"="down"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -902,7 +902,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Up 1-4%',
+			title: 'Incline /| +1-4%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^[1-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -938,7 +938,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Up 5-9%',
+			title: 'Incline /| +5-9%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -974,7 +974,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Up 10-14%',
+			title: 'Incline /| +10-14%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^1[0-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_10.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1010,7 +1010,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Up 15-19%',
+			title: 'Incline /| +15-19%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^1[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_15.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1046,7 +1046,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Up 20+%',
+			title: 'Incline /| +20+%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^[2-9][0-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_up_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1082,7 +1082,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Down -1-4%',
+			title: 'Incline |\ -1-4%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-[1-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_0.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1118,7 +1118,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Down -5-9%',
+			title: 'Incline |\ -5-9%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_5.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1154,7 +1154,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Down -10-14%',
+			title: 'Incline |\ -10-14%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-1[0-4]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_10.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1190,7 +1190,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Down -15-19%',
+			title: 'Incline |\ -15-19%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-1[5-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_15.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1226,7 +1226,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Down -20+%',
+			title: 'Incline |\ -20+%',
 			query: '(nwr["highway"!="elevator"]["incline"~"^-[2-9][0-9]%"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_down_20.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1262,7 +1262,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Incline',
-			title: 'Incline Unknown >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Fincline.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
+			title: 'Falta Incline missing >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Fincline.json&language=ca#welcome"</a><b>Completar/Complete</b>',
 			query: '(way["highway"]["highway"!="elevator"][!"incline"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/incline_question.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1298,8 +1298,8 @@ style: function (feature) {
 				},
 
 		{
-			group: 'Vorades',
-			title: 'Falta informació >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
+			group: 'Vorades/Bordillos/Kerbs',
+			title: 'Falta info missing >> <a href="https://mapcomplete.org/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar/Complete</b>',
 			query: '(node[kerb=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_yes.svg',
 			iconStyle: 'background-color:#714601',
